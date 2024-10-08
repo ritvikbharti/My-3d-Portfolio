@@ -11,7 +11,7 @@ function App() {
  </div>
   <About/>
  <Experience/>
- <Experience/>
+
  <Tech/>
  <Works/>
 
