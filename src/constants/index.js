@@ -18,8 +18,9 @@ import {
   leetcode,
   tesla,
   rtra,
-  carrent,
-  jobit,
+ fairymate,
+  linkedin,
+  tcs,
   tripguide,
   threejs,
   outlier,
@@ -161,32 +162,35 @@ const testimonials = [
   {
     testimonial:
       "Solved 500 plus questions on leetcode and 1450 plus rating",
-    name: "Sara Lee",
+    name: "Leetcode",
     designation: "CFO",
     company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    image: leetcode,
+    link:"https://leetcode.com/u/ritvik_bharti_01/",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
+"Secured Global Rank of 836 in TCS codevita season 11.",
+    name: "Tata Consultansy Services",
     designation: "COO",
     company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    image: tcs,
+    link:"",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
+"5000 Plus followers on linkendin that shows my connection strategy",   
+    name: "Linkedin",
+    designation: "Linkedin",
     company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    image: linkedin,
+    link:"https://www.linkedin.com/in/ritvik-bharti-677609257/",
   },
 ];
 
 const projects = [
   {
-    name: "RTRA LIVE WRBSITE",
+    name: "RTRA LIVE WEBSITE",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -229,7 +233,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: fairymate,
     source_code_link: "https://github.com/ritvikbharti/FAIRY_MATES",
   },
   {
