@@ -123,10 +123,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "sep 2024 - present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing and curating high-quality datasets to train and fine-tune AI models.",
+      "Labeling, annotating, and validating data to ensure accuracy and relevance for various machine learning tasks.",
+      "Evaluating and optimizing model performance by running experiments and adjusting parameters.",
+      "Collaborating with data scientists and machine learning engineers to define data requirements and training objectives.",
     ],
   },
   {
@@ -143,16 +143,16 @@ const experiences = [
     ],
   },
   {
-    title: "Leetcode Content Creater",
+    title: "Leetcode Content Creator",
     company_name: "Leetcode",
     icon: leetcode,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Reviewing and validating problem statements, test cases, and solutions to ensure content quality and correctness.",
+      "Collaborating with other reviewers, content creators, and developers to improve the overall problem-solving experience.",
+      "Providing clear and optimized solutions for coding problems, emphasizing best practices and efficient algorithms.",
+      "Conducting thorough code reviews and offering constructive feedback to enhance the quality of community submissions.",
     ],
   },
   
