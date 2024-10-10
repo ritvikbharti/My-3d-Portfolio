@@ -239,7 +239,7 @@ const projects = [
   {
     name: "Nirmaan",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Designed a machine learning-based app to monitor construction progress for small firms.",
     tags: [
       {
         name: "React Native",
@@ -256,6 +256,11 @@ const projects = [
       {
         name: "nodejs",
         color: "text-lime-700",
+      },
+      {
+        name:"Tensor-Flow",
+        color: "pink-text-gradient",
+
       },
       
     ],
