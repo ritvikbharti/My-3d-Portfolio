@@ -9,7 +9,7 @@ const codingProfiles = [
   {
     name: "LeetCode",
     icon: "/leetcode.png", // Put icons in /public or use URLs
-    link: "https://leetcode.com/ritvik_bharti",
+    link: "https://leetcode.com/ritvikbharti_01",
     bgColor: "bg-yellow-100",
   },
   {
@@ -21,7 +21,7 @@ const codingProfiles = [
   {
     name: "GitHub",
     icon: "/github.png",
-    link: "https://github.com/ritvik-bharti",
+    link: "https://github.com/ritvikbharti",
     bgColor: "bg-gray-200",
   },
   {
