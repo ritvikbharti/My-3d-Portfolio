@@ -1,14 +1,13 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-// eET77liAAN0k-mVCZ
-// template_kgxwkg8
-// service_n89w9fi
 
 const Contact = () => {
   const formRef = useRef();
@@ -21,13 +20,8 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
   };
 
   const handleSubmit = (e) => {
@@ -36,8 +30,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        'service_n89w9fi',
-        'template_kgxwkg8',
+        "service_n89w9fi",
+        "template_kgxwkg8",
         {
           from_name: form.name,
           to_name: "RITVIK BHARTI",
@@ -45,32 +39,24 @@ const Contact = () => {
           to_email: "bhartiritvik1000@gmail.com",
           message: form.message,
         },
-        'eET77liAAN0k-mVCZ'
+        "eET77liAAN0k-mVCZ"
       )
       .then(
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          setForm({ name: "", email: "", message: "" });
         },
         (error) => {
           setLoading(false);
           console.error(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className='relative xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden'>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -94,6 +80,7 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your email</span>
             <input
@@ -105,6 +92,7 @@ const Contact = () => {
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
+
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
@@ -132,6 +120,42 @@ const Contact = () => {
       >
         <EarthCanvas />
       </motion.div>
+
+      {/* Social Media Icons */}
+      <div className='absolute bottom-6 right-6 flex gap-4 text-2xl text-white'>
+        <a
+          href='https://github.com/ritvikbharti'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='hover:text-gray-400'
+        >
+          <FaGithub />
+        </a>
+        <a
+  href='https://www.instagram.com/ritvikbharti/' // change to your actual handle
+  target='_blank'
+  rel='noopener noreferrer'
+  className='hover:text-pink-500'
+>
+  <FaInstagram />
+</a>
+        <a
+          href='https://www.linkedin.com/in/ritvik-bharti-677609257/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='hover:text-blue-400'
+        >
+          <FaLinkedin />
+        </a>
+        <a
+          href='https://leetcode.com/ritvik_bharti_01'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='hover:text-yellow-400'
+        >
+          <SiLeetcode />
+        </a>
+      </div>
     </div>
   );
 };

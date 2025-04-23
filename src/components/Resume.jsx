@@ -17,7 +17,7 @@ const Resume = () => {
 
       {/* Content Section */}
       <div className={`-mt-20 pb-14 ${styles.paddingX}`}>
-        <div className="bg-white text-black rounded-lg p-6 shadow-lg mb-6 text-sm sm:text-base leading-relaxed">
+        <div className="bg-black-200 mt-4 text-white rounded-xl p-6 shadow-lg mb-6 text-sm sm:text-base leading-relaxed">
           <p>
             I'm a passionate developer with experience in full-stack development, problem solving, and AI model training. 
             Click the button below to download my resume and know more about my journey.

@@ -169,7 +169,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Solved 500 plus questions on leetcode and 1450 plus rating",
+      "Solved 700 plus questions on leetcode and 1680 plus rating",
     name: "Leetcode",
     designation: "CFO",
     company: "Acme Co",

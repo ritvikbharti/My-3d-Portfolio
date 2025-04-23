@@ -9,7 +9,7 @@ const codingProfiles = [
   {
     name: "LeetCode",
     icon: "/leetcode.png", // Put icons in /public or use URLs
-    link: "https://leetcode.com/ritvikbharti_01",
+    link: "https://leetcode.com/ritvik_bharti_01",
     bgColor: "bg-yellow-100",
   },
   {
@@ -43,7 +43,7 @@ const ProfileCard = ({ index, name, icon, link, bgColor }) => (
     <div className="flex items-center gap-4">
       <img src={icon} alt={name} className="w-10 h-10 object-contain" />
       <div>
-        <p className="text-lg font-semibold">{name}</p>
+        <p className="text-lg text-black font-semibold">{name}</p>
         <p className="text-xs text-gray-600">View Profile</p>
       </div>
     </div>
@@ -54,7 +54,7 @@ const CodingProfiles = () => {
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
       {/* Heading */}
-      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px]`}>
+      <div className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[200px] mb-4`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>my online presence</p>
           <h2 className={styles.sectionHeadText}>Coding Profiles</h2>
@@ -64,7 +64,7 @@ const CodingProfiles = () => {
       {/* Profile cards */}
       <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap justify-center gap-6`}>
         {codingProfiles.map((profile, index) => (
-          <ProfileCard key={profile.name} index={index} {...profile} />
+          <ProfileCard  key={profile.name} index={index} {...profile} />
         ))}
       </div>
     </div>
