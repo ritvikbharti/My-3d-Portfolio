@@ -275,6 +275,30 @@ const projects = [
     image: tripguide,
     source_code_link: "https://github.com/ritvikbharti/Nirmaan",
   },
+  ,
+  {
+    name: "Sudoku-VisualiZer",
+    description:
+      "Designed an online sudoku solver visulaziation after completion of your board using Backtracking Algorithm.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "cpp",
+        color: "pink-text-gradient",
+      },
+     
+      
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/ritvikbharti/Nirmaan",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
