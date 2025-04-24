@@ -9,6 +9,7 @@ import close from "./close.svg";
 import fairymate from "./fairymate.png";
 import linkedin from "./linkedin.png";
 import tcs from "./tcs.png";
+import sudoku from "./sudoku.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -34,6 +35,7 @@ import rtra from "./rtra.png"
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import leetcode from "./company/leetcode.png"
+
 
 export {
   logo,
@@ -70,4 +72,5 @@ export {
   fairymate,
   linkedin,
   tcs,
+  sudoku
 };
