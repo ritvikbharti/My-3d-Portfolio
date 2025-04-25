@@ -15,7 +15,7 @@ const codingProfiles = [
   {
     name: "Codechef",
     icon: "/codechef.png",
-    link: "https://codeforces.com/profile/ritvik_bharti",
+    link: "https://www.codechef.com/users/ritvik_01",
     bgColor: "bg-blue-100",
   },
   {
